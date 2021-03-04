@@ -1,4 +1,4 @@
-package com.github.eliascoelho911.recipevideogenerator.finder
+package com.github.eliascoelho911.recipevideogenerator.recipe
 
 import com.github.eliascoelho911.PATH
 import com.github.eliascoelho911.RECIPE
@@ -8,7 +8,7 @@ import kotlin.test.assertEquals
 class RecipeFinderTest {
     @Test
     fun mustCreateTheRecipeWithTheCorrectInformation() {
-        val recipeFound = RecipeFinder().find(PATH)
+        val recipeFound = RecipeFinder.find(PATH)
         assertEquals(RECIPE, recipeFound)
     }
 }

@@ -1,4 +1,4 @@
-package com.github.eliascoelho911.recipevideogenerator.model
+package com.github.eliascoelho911.recipevideogenerator.recipe
 
 data class Recipe(
     val url: String = "",

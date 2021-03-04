@@ -1,6 +1,6 @@
 package com.github.eliascoelho911
 
-import com.github.eliascoelho911.recipevideogenerator.model.Recipe
+import com.github.eliascoelho911.recipevideogenerator.recipe.Recipe
 
 const val PATH = "receita/328-pudim-de-pao-velho.html"
 const val URL = "https://www.tudogostoso.com.br/$PATH"

@@ -1,14 +1,14 @@
-package com.github.eliascoelho911.recipevideogenerator.webscraping
+package com.github.eliascoelho911.recipevideogenerator.recipe.webscraping
 
 import com.github.eliascoelho911.RECIPE
 import com.github.eliascoelho911.URL
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
-class PreparationTimeScrapingTest {
+class PreparationTimeWSTest {
     @Test
     fun preparationTimeMustBeFound() {
-        val preparationTimeFinded = PreparationTimeScraping(URL).find()
+        val preparationTimeFinded = PreparationTimeWS(URL).find()
         assertEquals(RECIPE.preparationTime, preparationTimeFinded)
     }
 }

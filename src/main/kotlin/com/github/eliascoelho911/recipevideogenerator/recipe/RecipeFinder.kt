@@ -1,11 +1,8 @@
-package com.github.eliascoelho911.recipevideogenerator.finder
-
-import com.github.eliascoelho911.recipevideogenerator.factory.RecipeFactory
-import com.github.eliascoelho911.recipevideogenerator.model.Recipe
+package com.github.eliascoelho911.recipevideogenerator.recipe
 
 private const val BASE_URL = "https://www.tudogostoso.com.br"
 
-class RecipeFinder {
+object RecipeFinder {
     fun find(path: String): Recipe {
         val url = createUrl(path)
         return RecipeFactory.create(url)
